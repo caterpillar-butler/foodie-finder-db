@@ -1,0 +1,12 @@
+{
+  "name": "Foodie Finder API",
+  "version": "1.0.0",
+  "description": "Foodie Finder API",
+  "title": "API Documentation",
+  "url": "http://localhost:8080",
+  "sampleUrl": false,
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
