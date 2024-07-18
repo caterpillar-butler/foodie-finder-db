@@ -222,7 +222,7 @@ function print() { __p += __j.call(arguments, '') }
 }`,type:"json"}]},error:{fields:{"Error 4xx":[{group:"Error 4xx",type:"String",optional:!1,field:"error",isArray:!1,description:"<p>\uC5D0\uB7EC \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Error-Response:",content:`HTTP/1.1 401 Unauthorized
 {
   "error": "Invalid token"
-}`,type:"json"}]},filename:"apidoc/Admin.apidoc.js",groupTitle:"Admin"},{type:"put",url:"/api/admin/inquiry/reply",title:"\uD2B9\uC815 \uB2F5\uBCC0\uAE00 \uC218\uC815",name:"UpdateReply",group:"Admin",version:"1.0.0",description:"<p>\uD2B9\uC815 \uB2F5\uBCC0 \uC218\uC815 \uCC98\uB9AC (\uBB38\uC758\uAE00 \uAD00\uB9AC \uC11C\uBE44\uC2A4)</p>",header:{fields:{Header:[{group:"Header",type:"String",optional:!1,field:"Authorization",isArray:!1,description:"<p>Bearer JWT</p>"}]}},body:[{group:"Body",type:"String",optional:!1,field:"inquiryId",isArray:!1,description:"<p>\uBB38\uC758\uAE00 ID</p>"},{group:"Body",type:"String",optional:!1,field:"replyId",isArray:!1,description:"<p>\uB2F5\uBCC0 ID</p>"},{group:"Body",type:"String",optional:!1,field:"replyContent",isArray:!1,description:"<p>\uC218\uC815\uB41C \uB2F5\uBCC0 \uB0B4\uC6A9</p>"}],parameter:{examples:[{title:"Request-Example:",content:`{
+}`,type:"json"}]},filename:"apidoc/Admin.apidoc.js",groupTitle:"Admin"},{type:"put",url:"/api/admin/inquiry/reply",title:"\uD2B9\uC815 \uB2F5\uBCC0\uAE00 \uC218\uC815",name:"UpdateReply",group:"Admin",version:"1.0.0",description:"<p>\uD2B9\uC815 \uB2F5\uBCC0 \uC218\uC815 \uCC98\uB9AC (\uBB38\uC758\uAE00 \uAD00\uB9AC \uC11C\uBE44\uC2A4)</p>",header:{fields:{Header:[{group:"Header",type:"String",optional:!1,field:"Authorization",isArray:!1,description:"<p>Bearer JWT</p>"}]}},body:[{group:"Request Body",type:"String",optional:!1,field:"inquiryId",isArray:!1,description:"<p>\uBB38\uC758\uAE00 ID</p>"},{group:"Request Body",type:"String",optional:!1,field:"replyId",isArray:!1,description:"<p>\uB2F5\uBCC0 ID</p>"},{group:"Request Body",type:"String",optional:!1,field:"replyContent",isArray:!1,description:"<p>\uC218\uC815\uB41C \uB2F5\uBCC0 \uB0B4\uC6A9</p>"}],parameter:{examples:[{title:"Request-Example:",content:`{
   "inquiryId": "inquiry1",
   "replyId": "reply1",
   "replyContent": "Updated Reply Content"
@@ -254,19 +254,23 @@ function print() { __p += __j.call(arguments, '') }
 {
   "error": "Email already exists"
 }`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
-  "email": "newuser@example.com",
-  "name": "New User",
-  "password": "newUserPassword",
-  "phone": "010-1234-5678",
-  "profileImage": "https://example.com/profile.jpg",
-  "birth": "1990-01-01",
-  "gender": "M"
+  "userDto": {
+    "email": "newuser@example.com",
+    "name": "New User",
+    "password": "newUserPassword",
+    "phone": "010-1234-5678",
+    "profileImage": "https://example.com/profile.jpg",
+    "birth": "1990-01-01",
+    "gender": "M"
+  }
 }`,type:"json"}]},filename:"apidoc/Auth.apidoc.js",groupTitle:"Auth"},{type:"post",url:"/api/user/board",title:"\uAC8C\uC2DC\uAE00 \uC0DD\uC131",name:"CreateBoard",group:"Board",version:"1.0.0",description:"<p>\uAC8C\uC2DC\uAE00 \uC0DD\uC131 (\uAC8C\uC2DC\uAE00 \uC11C\uBE44\uC2A4)</p>",header:{fields:{Header:[{group:"Header",type:"String",optional:!1,field:"Authorization",isArray:!1,description:"<p>Bearer JWT</p>"},{group:"Header",type:"String",optional:!1,field:"Content-Type",isArray:!1,description:"<p>application/json</p>"}]}},body:[{group:"Request Body",type:"Object",optional:!1,field:"boardDto",isArray:!1,description:"<p>\uAC8C\uC2DC\uAE00 \uC815\uBCF4</p>"}],parameter:{examples:[{title:"Request-Example:",content:`{
-  "title": "Post Title",
-  "content": "Post Content",
-  "likes": 0,
-  "image": "https://example.com/image.jpg",
-  "hashTags": ["tag1", "tag2"]
+  "boardDto": {
+    "title": "Post Title",
+    "content": "Post Content",
+    "likes": 0,
+    "image": "https://example.com/image.jpg",
+    "hashTags": ["tag1", "tag2"]
+  }
 }`,type:"json"}]},success:{fields:{"Success 200":[{group:"Success 200",type:"String",optional:!1,field:"message",isArray:!1,description:"<p>\uC131\uACF5 \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Success-Response:",content:`HTTP/1.1 200 OK
 {
   "message": "Successfully created post"
@@ -308,11 +312,13 @@ function print() { __p += __j.call(arguments, '') }
 {
   "error": "Invalid token"
 }`,type:"json"}]},filename:"apidoc/Board.apidoc.js",groupTitle:"Board"},{type:"put",url:"/api/user/board",title:"\uAC8C\uC2DC\uAE00 \uC218\uC815",name:"UpdateBoard",group:"Board",version:"1.0.0",description:"<p>\uAC8C\uC2DC\uAE00 \uC218\uC815 (\uAC8C\uC2DC\uAE00 \uC11C\uBE44\uC2A4)</p>",header:{fields:{Header:[{group:"Header",type:"String",optional:!1,field:"Authorization",isArray:!1,description:"<p>Bearer JWT</p>"},{group:"Header",type:"String",optional:!1,field:"Content-Type",isArray:!1,description:"<p>application/json</p>"}]}},body:[{group:"Request Body",type:"Object",optional:!1,field:"boardDto",isArray:!1,description:"<p>\uAC8C\uC2DC\uAE00 \uC815\uBCF4</p>"}],parameter:{examples:[{title:"Request-Example:",content:`{
-  "title": "Post Title",
-  "content": "Post Content",
-  "likes": 0,
-  "image": "https://example.com/image.jpg",
-  "hashTags": ["tag1", "tag2"]
+  "boardDto": {
+    "title": "Post Title",
+    "content": "Post Content",
+    "likes": 0,
+    "image": "https://example.com/image.jpg",
+    "hashTags": ["tag1", "tag2"]
+  }
 }`,type:"json"}]},success:{fields:{"Success 200":[{group:"Success 200",type:"String",optional:!1,field:"message",isArray:!1,description:"<p>\uC131\uACF5 \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Success-Response:",content:`HTTP/1.1 200 OK
 {
   "message": "Successfully updated post"
@@ -412,93 +418,103 @@ function print() { __p += __j.call(arguments, '') }
 {
   "error": "Invalid token"
 }`,type:"json"}]},filename:"apidoc/Inquiry.apidoc.js",groupTitle:"Inquiry"},{type:"get",url:"/api/noneUser/boards",title:"\uC804\uCCB4 \uAC8C\uC2DC\uAE00 \uC870\uD68C",name:"GetAllBoards",group:"NoneUser",version:"1.0.0",description:"<p>\uBAA8\uB4E0 \uAC8C\uC2DC\uAE00 \uC870\uD68C</p>",success:{fields:{"Success 200":[{group:"Success 200",type:"Object[]",optional:!1,field:"boardDtos",isArray:!0,description:"<p>\uAC8C\uC2DC\uAE00 \uC815\uBCF4 \uBAA9\uB85D</p>"}]},examples:[{title:"Success-Response:",content:`HTTP/1.1 200 OK
-[
-  {
-    "id": "board1",
-    "title": "Board Title",
-    "content": "Board Content"
-  },
-  {
-    "id": "board2",
-    "title": "Board Title",
-    "content": "Board Content"
-  },
-  ...
-]`,type:"json"}]},error:{fields:{"Error 4xx":[{group:"Error 4xx",type:"String",optional:!1,field:"error",isArray:!1,description:"<p>\uC5D0\uB7EC \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Error-Response:",content:`HTTP/1.1 500 Internal Server Error
+{
+  "boardDtos": [
+    {
+      "id": "board1",
+      "title": "Board Title",
+      "content": "Board Content"
+    },
+    {
+      "id": "board2",
+      "title": "Board Title",
+      "content": "Board Content"
+    },
+    ...
+  ]
+}`,type:"json"}]},error:{fields:{"Error 4xx":[{group:"Error 4xx",type:"String",optional:!1,field:"error",isArray:!1,description:"<p>\uC5D0\uB7EC \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Error-Response:",content:`HTTP/1.1 500 Internal Server Error
 {
   "error": "Failed to fetch boards"
 }`,type:"json"}]},filename:"apidoc/NoneUser.apidoc.js",groupTitle:"NoneUser"},{type:"get",url:"/api/noneUser/board/content",title:"\uAC8C\uC2DC\uAE00 \uB0B4\uC6A9 \uAC80\uC0C9",name:"SearchBoardByContent",group:"NoneUser",version:"1.0.0",description:"<p>\uAC8C\uC2DC\uAE00 \uB0B4\uC6A9 \uAC80\uC0C9</p>",body:[{group:"Request Body",type:"String",optional:!1,field:"content",isArray:!1,description:"<p>\uAC80\uC0C9\uD560 \uB0B4\uC6A9</p>"}],success:{fields:{"Success 200":[{group:"Success 200",type:"Object[]",optional:!1,field:"boardDtos",isArray:!0,description:"<p>\uAC8C\uC2DC\uAE00 \uC815\uBCF4 \uBAA9\uB85D</p>"}]},examples:[{title:"Success-Response:",content:`HTTP/1.1 200 OK
-[
-  {
-    "id": "board1",
-    "title": "Board Title",
-    "content": "Search Content"
-  },
-  {
-    "id": "board2",
-    "title": "Search Content",
-    "content": "Board Content"
-  },
-  ...
-]`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
+{
+  "boardDtos": [
+    {
+      "id": "board1",
+      "title": "Board Title",
+      "content": "Search Content"
+    },
+    {
+      "id": "board2",
+      "title": "Search Content",
+      "content": "Board Content"
+    },
+    ...
+  ]
+}`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
   "content": "Search Content"
 }`,type:"json"}]},error:{fields:{"Error 4xx":[{group:"Error 4xx",type:"String",optional:!1,field:"error",isArray:!1,description:"<p>\uC5D0\uB7EC \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Error-Response:",content:`HTTP/1.1 500 Internal Server Error
 {
   "error": "Failed to search boards by content"
 }`,type:"json"}]},filename:"apidoc/NoneUser.apidoc.js",groupTitle:"NoneUser"},{type:"get",url:"/api/noneUser/board/tag",title:"\uAC8C\uC2DC\uAE00 \uD574\uC2DC\uD0DC\uADF8 \uAC80\uC0C9",name:"SearchBoardByTag",group:"NoneUser",version:"1.0.0",description:"<p>\uD574\uC2DC\uD0DC\uADF8\uBCC4 \uAC8C\uC2DC\uAE00 \uAC80\uC0C9</p>",body:[{group:"Request Body",type:"String",optional:!1,field:"tag",isArray:!1,description:"<p>\uAC80\uC0C9\uD560 \uD574\uC2DC\uD0DC\uADF8</p>"}],success:{fields:{"Success 200":[{group:"Success 200",type:"Object[]",optional:!1,field:"boardDtos",isArray:!0,description:"<p>\uAC8C\uC2DC\uAE00 \uC815\uBCF4 \uBAA9\uB85D</p>"}]},examples:[{title:"Success-Response:",content:`HTTP/1.1 200 OK
-[
-  {
-    "id": "board1",
-    "title": "Board Title",
-    "content": "Board Content",
-    "tags": ["Search Tag"]
-  },
-  {
-    "id": "board2",
-    "title": "Search Tag",
-    "content": "Board Content",
-    "tags": ["Search Tag"]
-  },
-  ...
-]`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
+{
+  "boardDtos": [
+    {
+      "id": "board1",
+      "title": "Board Title",
+      "content": "Board Content",
+      "tags": ["Search Tag"]
+    },
+    {
+      "id": "board2",
+      "title": "Search Tag",
+      "content": "Board Content",
+      "tags": ["Search Tag"]
+    },
+    ...
+  ]
+}`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
   "tag": "Search Tag"
 }`,type:"json"}]},error:{fields:{"Error 4xx":[{group:"Error 4xx",type:"String",optional:!1,field:"error",isArray:!1,description:"<p>\uC5D0\uB7EC \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Error-Response:",content:`HTTP/1.1 500 Internal Server Error
 {
   "error": "Failed to search boards by tag"
 }`,type:"json"}]},filename:"apidoc/NoneUser.apidoc.js",groupTitle:"NoneUser"},{type:"get",url:"/api/noneUser/board/title",title:"\uAC8C\uC2DC\uAE00 \uC81C\uBAA9 \uAC80\uC0C9",name:"SearchBoardByTitle",group:"NoneUser",version:"1.0.0",description:"<p>\uAC8C\uC2DC\uAE00 \uC81C\uBAA9 \uAC80\uC0C9</p>",body:[{group:"Request Body",type:"String",optional:!1,field:"title",isArray:!1,description:"<p>\uAC80\uC0C9\uD560 \uC81C\uBAA9</p>"}],success:{fields:{"Success 200":[{group:"Success 200",type:"Object[]",optional:!1,field:"boardDtos",isArray:!0,description:"<p>\uAC8C\uC2DC\uAE00 \uC815\uBCF4 \uBAA9\uB85D</p>"}]},examples:[{title:"Success-Response:",content:`HTTP/1.1 200 OK
-[
-  {
-    "id": "board1",
-    "title": "Search Title",
-    "content": "Board Content"
-  },
-  {
-    "id": "board2",
-    "title": "Search Title",
-    "content": "Board Content"
-  },
-  ...
-]`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
+{
+  "boardDtos": [
+    {
+      "id": "board1",
+      "title": "Search Title",
+      "content": "Board Content"
+    },
+    {
+      "id": "board2",
+      "title": "Search Title",
+      "content": "Board Content"
+    },
+    ...
+  ]
+}`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
   "title": "Search Title"
 }`,type:"json"}]},error:{fields:{"Error 4xx":[{group:"Error 4xx",type:"String",optional:!1,field:"error",isArray:!1,description:"<p>\uC5D0\uB7EC \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Error-Response:",content:`HTTP/1.1 500 Internal Server Error
 {
   "error": "Failed to search boards by title"
 }`,type:"json"}]},filename:"apidoc/NoneUser.apidoc.js",groupTitle:"NoneUser"},{type:"get",url:"/api/noneUser/board/user",title:"\uC720\uC800\uBCC4 \uAC8C\uC2DC\uAE00 \uAC80\uC0C9",name:"SearchBoardByUser",group:"NoneUser",version:"1.0.0",description:"<p>\uC720\uC800\uBCC4 \uAC8C\uC2DC\uAE00 \uAC80\uC0C9</p>",body:[{group:"Request Body",type:"String",optional:!1,field:"userId",isArray:!1,description:"<p>\uAC80\uC0C9\uD560 \uC720\uC800 ID</p>"}],success:{fields:{"Success 200":[{group:"Success 200",type:"Object[]",optional:!1,field:"boardDtos",isArray:!0,description:"<p>\uAC8C\uC2DC\uAE00 \uC815\uBCF4 \uBAA9\uB85D</p>"}]},examples:[{title:"Success-Response:",content:`HTTP/1.1 200 OK
-[
-  {
-    "id": "board1",
-    "title": "Board Title",
-    "content": "Board Content",
-    "userId": "user1"
-  },
-  {
-    "id": "board2",
-    "title": "Search Tag",
-    "content": "Board Content",
-    "userId": "user1"
-  },
-  ...
-]`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
+{
+  "boardDtos": [
+    {
+      "id": "board1",
+      "title": "Board Title",
+      "content": "Board Content",
+      "userId": "user1"
+    },
+    {
+      "id": "board2",
+      "title": "Search Tag",
+      "content": "Board Content",
+      "userId": "user1"
+    },
+    ...
+  ]
+}`,type:"json"}]},parameter:{examples:[{title:"Request-Example:",content:`{
   "userId": "user1"
 }`,type:"json"}]},error:{fields:{"Error 4xx":[{group:"Error 4xx",type:"String",optional:!1,field:"error",isArray:!1,description:"<p>\uC5D0\uB7EC \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Error-Response:",content:`HTTP/1.1 500 Internal Server Error
 {
@@ -554,17 +570,19 @@ function print() { __p += __j.call(arguments, '') }
 {
   "error": "Invalid token"
 }`,type:"json"}]},filename:"apidoc/User.apidoc.js",groupTitle:"User"},{type:"put",url:"/api/user/myProfile",title:"\uB0B4 \uD504\uB85C\uD544 \uC218\uC815",name:"UpdateProfile",group:"User",version:"1.0.0",description:"<p>\uB0B4 \uD504\uB85C\uD544 \uC218\uC815 (\uD68C\uC6D0\uC815\uBCF4 \uC11C\uBE44\uC2A4)</p>",header:{fields:{Header:[{group:"Header",type:"String",optional:!1,field:"Authorization",isArray:!1,description:"<p>Bearer JWT</p>"},{group:"Header",type:"String",optional:!1,field:"Content-Type",isArray:!1,description:"<p>application/json</p>"}]}},body:[{group:"Request Body",type:"Object",optional:!1,field:"userDto",isArray:!1,description:"<p>\uC0AC\uC6A9\uC790 \uC815\uBCF4</p>"}],parameter:{examples:[{title:"Request-Example:",content:`{
-  "email": "user@example.com",
-  "name": "User Name",
-  "phone": "010-1234-5678",
-  "profileImage": "https://example.com/profile.jpg",
-  "introduce": "Hello, I'm a user",
-  "birth": "1990-01-01",
-  "gender": "M"
+  "userDto": {
+    "email": "user@example.com",
+    "name": "User Name",
+    "phone": "010-1234-5678",
+    "profileImage": "https://example.com/profile.jpg",
+    "introduce": "Hello, I'm a user",
+    "birth": "1990-01-01",
+    "gender": "M"
+  }
 }`,type:"json"}]},success:{fields:{"Success 200":[{group:"Success 200",type:"String",optional:!1,field:"message",isArray:!1,description:"<p>\uC131\uACF5 \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Success-Response:",content:`HTTP/1.1 200 OK
 {
   "message": "Successfully updated profile"
 }`,type:"json"}]},error:{fields:{"Error 4xx":[{group:"Error 4xx",type:"String",optional:!1,field:"error",isArray:!1,description:"<p>\uC5D0\uB7EC \uBA54\uC2DC\uC9C0</p>"}]},examples:[{title:"Error-Response:",content:`HTTP/1.1 401 Unauthorized
 {
   "error": "Invalid token"
-}`,type:"json"}]},filename:"apidoc/User.apidoc.js",groupTitle:"User"}];const he={name:"Foodie Finder API",version:"1.0.0",description:"Foodie Finder API",title:"API Documentation",url:"http://localhost:8080",sampleUrl:!1,template:{withCompare:!0,withGenerator:!0},defaultVersion:"0.0.0",apidoc:"0.3.0",generator:{name:"apidoc",time:"Thu Jul 18 2024 05:15:11 GMT+0900 (Korean Standard Time)",url:"https://apidocjs.com",version:"1.2.0"}};dt();const be=l().compile(g()("#template-header").html()),Re=l().compile(g()("#template-footer").html()),q=l().compile(g()("#template-article").html()),me=l().compile(g()("#template-compare-article").html()),de=l().compile(g()("#template-generator").html()),ve=l().compile(g()("#template-project").html()),Me=l().compile(g()("#template-sections").html()),We=l().compile(g()("#template-sidenav").html()),Ue={aloneDisplay:!1,showRequiredLabels:!1,withGenerator:!0,withCompare:!0};he.template=Object.assign(Ue,(Ke=he.template)!=null?Ke:{}),he.template.forceLanguage&&At(he.template.forceLanguage);const Ye=(0,i.groupBy)(Le,re=>re.group),et={};g().each(Ye,(re,ne)=>{et[re]=(0,i.groupBy)(ne,le=>le.name)});const at=[];g().each(et,(re,ne)=>{let le=[];g().each(ne,(ae,De)=>{const ke=De[0].title;ke&&le.push(ke.toLowerCase()+"#~#"+ae)}),le.sort(),he.order&&(le=Ie(le,he.order,"#~#")),le.forEach(ae=>{const ke=ae.split("#~#")[1];ne[ke].forEach(Ne=>{at.push(Ne)})})}),Le=at;let gt={};const Bt={};let Ot={};Ot[he.version]=1,g().each(Le,(re,ne)=>{gt[ne.group]=1,Bt[ne.group]=ne.groupTitle||ne.group,Ot[ne.version]=1}),gt=Object.keys(gt),gt.sort(),he.order&&(gt=Ce(Bt,he.order)),Ot=Object.keys(Ot),Ot.sort(r().compare),Ot.reverse();const Rt=[];gt.forEach(re=>{Rt.push({group:re,isHeader:!0,title:Bt[re]});let ne="";Le.forEach(le=>{le.group===re&&(ne!==le.name?Rt.push({title:le.title,group:re,name:le.name,type:le.type,version:le.version,url:le.url}):Rt.push({title:le.title,group:re,hidden:!0,name:le.name,type:le.type,version:le.version,url:le.url}),ne=le.name)})});function pn(re,ne,le){let ae=!1;if(!ne)return ae;const De=ne.match(/<h(1|2).*?>(.+?)<\/h(1|2)>/gi);return De&&De.forEach(function(ke){const Ne=ke.substring(2,3),lt=ke.replace(/<.+?>/g,""),xt=ke.match(/id="api-([^-]+)(?:-(.+))?"/),bt=xt?xt[1]:null,vt=xt?xt[2]:null;Ne==="1"&&lt&&bt&&(re.splice(le,0,{group:bt,isHeader:!0,title:lt,isFixed:!0}),le++,ae=!0),Ne==="2"&&lt&&bt&&vt&&(re.splice(le,0,{group:bt,name:vt,isHeader:!1,title:lt,isFixed:!1,version:"1.0"}),le++)}),ae}let hn;if(he.header&&(hn=pn(Rt,he.header.content,0),hn||Rt.unshift({group:"_header",isHeader:!0,title:he.header.title==null?Et("General"):he.header.title,isFixed:!0})),he.footer){const re=Rt.length;hn=pn(Rt,he.footer.content,Rt.length),!hn&&he.footer.title!=null&&Rt.splice(re,0,{group:"_footer",isHeader:!0,title:he.footer.title,isFixed:!0})}const Rn=he.title?he.title:"apiDoc: "+he.name+" - "+he.version;g()(document).attr("title",Rn),g()("#loader").remove();const Mn={nav:Rt};g()("#sidenav").append(We(Mn)),g()("#generator").append(de(he)),(0,i.extend)(he,{versions:Ot}),g()("#project").append(ve(he)),he.header&&g()("#header").append(be(he.header)),he.footer&&(g()("#footer").append(Re(he.footer)),he.template.aloneDisplay&&document.getElementById("api-_footer").classList.add("hide"));const kt={};let Bn="";gt.forEach(function(re){const ne=[];let le="",ae={},De=re,ke="";kt[re]={},Le.forEach(function(Ne){re===Ne.group&&(le!==Ne.name?(Le.forEach(function(lt){re===lt.group&&Ne.name===lt.name&&(Object.prototype.hasOwnProperty.call(kt[Ne.group],Ne.name)||(kt[Ne.group][Ne.name]=[]),kt[Ne.group][Ne.name].push(lt.version))}),ae={article:Ne,versions:kt[Ne.group][Ne.name]}):ae={article:Ne,hidden:!0,versions:kt[Ne.group][Ne.name]},he.sampleUrl&&he.sampleUrl===!0&&(he.sampleUrl=window.location.origin),he.url&&ae.article.url.substr(0,4).toLowerCase()!=="http"&&(ae.article.url=he.url+ae.article.url),se(ae,Ne),Ne.groupTitle&&(De=Ne.groupTitle),Ne.groupDescription&&(ke=Ne.groupDescription),ne.push({article:q(ae),group:Ne.group,name:Ne.name,aloneDisplay:he.template.aloneDisplay}),le=Ne.name)}),ae={group:re,title:De,description:ke,articles:ne,aloneDisplay:he.template.aloneDisplay},Bn+=Me(ae)}),g()("#sections").append(Bn),he.template.aloneDisplay||(document.body.dataset.spy="scroll",g()("body").scrollspy({target:"#scrollingNav"})),g()(".form-control").on("focus change",function(){g()(this).removeClass("border-danger")}),g()(".sidenav").find("a").on("click",function(re){re.preventDefault();const ne=this.getAttribute("href");if(he.template.aloneDisplay){const le=document.querySelector(".sidenav > li.active");le&&le.classList.remove("active"),this.parentNode.classList.add("active")}else{const le=document.querySelector(ne);le&&g()("html,body").animate({scrollTop:le.offsetTop},400)}window.location.hash=ne});function St(re){let ne=!1;return g().each(re,le=>{ne=ne||(0,i.some)(re[le],ae=>ae.type)}),ne}function kn(){g()('button[data-toggle="popover"]').popover().click(function(ne){ne.preventDefault()});const re=g()("#version strong").html();if(g()("#sidenav li").removeClass("is-new"),he.template.withCompare&&g()("#sidenav li[data-version='"+re+"']").each(function(){const ne=g()(this).data("group"),le=g()(this).data("name"),ae=g()("#sidenav li[data-group='"+ne+"'][data-name='"+le+"']").length,De=g()("#sidenav li[data-group='"+ne+"'][data-name='"+le+"']").index(g()(this));(ae===1||De===ae-1)&&g()(this).addClass("is-new")}),g()(".nav-tabs-examples a").click(function(ne){ne.preventDefault(),g()(this).tab("show")}),g()(".nav-tabs-examples").find("a:first").tab("show"),g()(".sample-request-content-type-switch").change(function(){g()(this).val()==="body-form-data"?(g()("#sample-request-body-json-input-"+g()(this).data("id")).hide(),g()("#sample-request-body-form-input-"+g()(this).data("id")).show()):(g()("#sample-request-body-form-input-"+g()(this).data("id")).hide(),g()("#sample-request-body-json-input-"+g()(this).data("id")).show())}),he.template.aloneDisplay&&(g()(".show-group").click(function(){const ne="."+g()(this).attr("data-group")+"-group",le="."+g()(this).attr("data-group")+"-article";g()(".show-api-group").addClass("hide"),g()(ne).removeClass("hide"),g()(".show-api-article").addClass("hide"),g()(le).removeClass("hide")}),g()(".show-api").click(function(){const ne=this.getAttribute("href").substring(1),le=document.getElementById("version").textContent.trim(),ae=`.${this.dataset.name}-article`,De=`[id="${ne}-${le}"]`,ke=`.${this.dataset.group}-group`;g()(".show-api-group").addClass("hide"),g()(ke).removeClass("hide"),g()(".show-api-article").addClass("hide");let Ne=g()(ae);g()(De).length&&(Ne=g()(De).parent()),Ne.removeClass("hide"),ne.match(/_(header|footer)/)&&document.getElementById(ne).classList.remove("hide")})),he.template.aloneDisplay||g()("body").scrollspy("refresh"),he.template.aloneDisplay){const ne=decodeURI(window.location.hash);if(ne!=null&&ne.length!==0){const le=document.getElementById("version").textContent.trim(),ae=document.querySelector(`li .${ne.slice(1)}-init`),De=document.querySelector(`li[data-version="${le}"] .show-api.${ne.slice(1)}-init`);let ke=ae;De&&(ke=De),ke.click()}}}function $(re){typeof re=="undefined"?re=g()("#version strong").html():g()("#version strong").html(re),g()("article").addClass("hide"),g()("#sidenav li:not(.nav-fixed)").addClass("hide");const ne={};document.querySelectorAll("article[data-version]").forEach(le=>{const ae=le.dataset.group,De=le.dataset.name,ke=le.dataset.version,Ne=ae+De;!ne[Ne]&&r().lte(ke,re)&&(ne[Ne]=!0,document.querySelector(`article[data-group="${ae}"][data-name="${De}"][data-version="${ke}"]`).classList.remove("hide"),document.querySelector(`#sidenav li[data-group="${ae}"][data-name="${De}"][data-version="${ke}"]`).classList.remove("hide"),document.querySelector(`#sidenav li.nav-header[data-group="${ae}"]`).classList.remove("hide"))}),g()("article[data-version]").each(function(le){const ae=g()(this).data("group");g()("section#api-"+ae).removeClass("hide"),g()("section#api-"+ae+" article:visible").length===0?g()("section#api-"+ae).addClass("hide"):g()("section#api-"+ae).removeClass("hide")})}if($(),g()("#versions li.version a").on("click",function(re){re.preventDefault(),$(g()(this).html())}),g()("#compareAllWithPredecessor").on("click",ee),g()("article .versions li.version a").on("click",Q),g().urlParam=function(re){const ne=new RegExp("[\\?&amp;]"+re+"=([^&amp;#]*)").exec(window.location.href);return ne&&ne[1]?ne[1]:null},g().urlParam("compare")&&g()("#compareAllWithPredecessor").trigger("click"),window.location.hash){const re=decodeURI(window.location.hash);g()(re).length>0&&g()("html,body").animate({scrollTop:parseInt(g()(re).offset().top)},0)}document.querySelector('[data-toggle="offcanvas"]').addEventListener("click",function(){const re=document.querySelector(".row-offcanvas");re&&re.classList.toggle("active")}),g()("#scrollingNav .sidenav-search input.search").focus(),g()('[data-action="filter-search"]').on("keyup",V(re=>{const ne=re.currentTarget.value.toLowerCase();g()(".sidenav a.nav-list-item").filter((le,ae)=>g()(ae).toggle(g()(ae).text().toLowerCase().indexOf(ne)>-1))},200)),g()("span.search-reset").on("click",function(){g()("#scrollingNav .sidenav-search input.search").val("").focus(),g()(".sidenav").find("a.nav-list-item").show()});function V(re,ne){let le=null;return(...ae)=>{clearTimeout(le),le=setTimeout(re.bind(this,...ae),ne||0)}}function Q(re){re.preventDefault();const ne=g()(this).parents("article"),le=g()(this).html(),ae=ne.find(".version"),De=ae.find("strong").html();ae.find("strong").html(le);const ke=ne.data("group"),Ne=ne.data("name"),lt=ne.data("version"),xt=ne.data("compare-version");if(xt!==le&&!(!xt&&lt===le)){if(xt&&kt[ke][Ne][0]===le||lt===le)Te(ke,Ne,lt);else{let bt={},vt={};g().each(et[ke][Ne],function(ar,Vn){Vn.version===lt&&(bt=Vn),Vn.version===le&&(vt=Vn)});const st={article:bt,compare:vt,versions:kt[ke][Ne]};st.article.id=st.article.group+"-"+st.article.name+"-"+st.article.version,st.article.id=st.article.id.replace(/\./g,"_"),st.compare.id=st.compare.group+"-"+st.compare.name+"-"+st.compare.version,st.compare.id=st.compare.id.replace(/\./g,"_");let nt=bt;nt.header&&nt.header.fields&&(st._hasTypeInHeaderFields=St(nt.header.fields)),nt.parameter&&nt.parameter.fields&&(st._hasTypeInParameterFields=St(nt.parameter.fields)),nt.error&&nt.error.fields&&(st._hasTypeInErrorFields=St(nt.error.fields)),nt.success&&nt.success.fields&&(st._hasTypeInSuccessFields=St(nt.success.fields)),nt.info&&nt.info.fields&&(st._hasTypeInInfoFields=St(nt.info.fields)),nt=vt,st._hasTypeInHeaderFields!==!0&&nt.header&&nt.header.fields&&(st._hasTypeInHeaderFields=St(nt.header.fields)),st._hasTypeInParameterFields!==!0&&nt.parameter&&nt.parameter.fields&&(st._hasTypeInParameterFields=St(nt.parameter.fields)),st._hasTypeInErrorFields!==!0&&nt.error&&nt.error.fields&&(st._hasTypeInErrorFields=St(nt.error.fields)),st._hasTypeInSuccessFields!==!0&&nt.success&&nt.success.fields&&(st._hasTypeInSuccessFields=St(nt.success.fields)),st._hasTypeInInfoFields!==!0&&nt.info&&nt.info.fields&&(st._hasTypeInInfoFields=St(nt.info.fields));const pi=me(st);ne.after(pi),ne.next().find(".versions li.version a").on("click",Q),g()("#sidenav li[data-group='"+ke+"'][data-name='"+Ne+"'][data-version='"+De+"']").addClass("has-modifications"),ne.remove()}kn(),v().highlightAll()}}function ee(re){re.preventDefault(),g()("article:visible .versions").each(function(){const le=g()(this).parents("article").data("version");let ae=null;g()(this).find("li.version a").each(function(){g()(this).html()<le&&!ae&&(ae=g()(this))}),ae&&ae.trigger("click")})}function se(re,ne){re.id=re.article.group+"-"+re.article.name+"-"+re.article.version,re.id=re.id.replace(/\./g,"_"),ne.header&&ne.header.fields&&(re._hasTypeInHeaderFields=St(ne.header.fields)),ne.parameter&&ne.parameter.fields&&(re._hasTypeInParameterFields=St(ne.parameter.fields)),ne.error&&ne.error.fields&&(re._hasTypeInErrorFields=St(ne.error.fields)),ne.success&&ne.success.fields&&(re._hasTypeInSuccessFields=St(ne.success.fields)),ne.info&&ne.info.fields&&(re._hasTypeInInfoFields=St(ne.info.fields)),re.template=he.template}function ye(re,ne,le){let ae={};g().each(et[re][ne],function(ke,Ne){Ne.version===le&&(ae=Ne)});const De={article:ae,versions:kt[re][ne]};return se(De,ae),q(De)}function Te(re,ne,le){const ae=g()("article[data-group='"+re+"'][data-name='"+ne+"']:visible"),De=ye(re,ne,le);ae.after(De),ae.next().find(".versions li.version a").on("click",Q),g()("#sidenav li[data-group='"+re+"'][data-name='"+ne+"'][data-version='"+le+"']").removeClass("has-modifications"),ae.remove()}function Ie(re,ne,le){const ae=[];return ne.forEach(function(De){le?re.forEach(function(ke){const Ne=ke.split(le);(Ne[0]===De||Ne[1]===De)&&ae.push(ke)}):re.forEach(function(ke){ke===De&&ae.push(De)})}),re.forEach(function(De){ae.indexOf(De)===-1&&ae.push(De)}),ae}function Ce(re,ne){const le=[];return ne.forEach(ae=>{Object.keys(re).forEach(De=>{re[De].replace(/_/g," ")===ae&&le.push(De)})}),Object.keys(re).forEach(ae=>{le.indexOf(ae)===-1&&le.push(ae)}),le}kn()}})()})();
+}`,type:"json"}]},filename:"apidoc/User.apidoc.js",groupTitle:"User"}];const he={name:"Foodie Finder API",version:"1.0.0",description:"Foodie Finder API",title:"API Documentation",url:"http://localhost:8080",sampleUrl:!1,template:{withCompare:!0,withGenerator:!0},defaultVersion:"0.0.0",apidoc:"0.3.0",generator:{name:"apidoc",time:"Thu Jul 18 2024 19:45:51 GMT+0900 (Korean Standard Time)",url:"https://apidocjs.com",version:"1.2.0"}};dt();const be=l().compile(g()("#template-header").html()),Re=l().compile(g()("#template-footer").html()),q=l().compile(g()("#template-article").html()),me=l().compile(g()("#template-compare-article").html()),de=l().compile(g()("#template-generator").html()),ve=l().compile(g()("#template-project").html()),Me=l().compile(g()("#template-sections").html()),We=l().compile(g()("#template-sidenav").html()),Ue={aloneDisplay:!1,showRequiredLabels:!1,withGenerator:!0,withCompare:!0};he.template=Object.assign(Ue,(Ke=he.template)!=null?Ke:{}),he.template.forceLanguage&&At(he.template.forceLanguage);const Ye=(0,i.groupBy)(Le,re=>re.group),et={};g().each(Ye,(re,ne)=>{et[re]=(0,i.groupBy)(ne,le=>le.name)});const at=[];g().each(et,(re,ne)=>{let le=[];g().each(ne,(ae,De)=>{const ke=De[0].title;ke&&le.push(ke.toLowerCase()+"#~#"+ae)}),le.sort(),he.order&&(le=Ie(le,he.order,"#~#")),le.forEach(ae=>{const ke=ae.split("#~#")[1];ne[ke].forEach(Ne=>{at.push(Ne)})})}),Le=at;let gt={};const Bt={};let Ot={};Ot[he.version]=1,g().each(Le,(re,ne)=>{gt[ne.group]=1,Bt[ne.group]=ne.groupTitle||ne.group,Ot[ne.version]=1}),gt=Object.keys(gt),gt.sort(),he.order&&(gt=Ce(Bt,he.order)),Ot=Object.keys(Ot),Ot.sort(r().compare),Ot.reverse();const Rt=[];gt.forEach(re=>{Rt.push({group:re,isHeader:!0,title:Bt[re]});let ne="";Le.forEach(le=>{le.group===re&&(ne!==le.name?Rt.push({title:le.title,group:re,name:le.name,type:le.type,version:le.version,url:le.url}):Rt.push({title:le.title,group:re,hidden:!0,name:le.name,type:le.type,version:le.version,url:le.url}),ne=le.name)})});function pn(re,ne,le){let ae=!1;if(!ne)return ae;const De=ne.match(/<h(1|2).*?>(.+?)<\/h(1|2)>/gi);return De&&De.forEach(function(ke){const Ne=ke.substring(2,3),lt=ke.replace(/<.+?>/g,""),xt=ke.match(/id="api-([^-]+)(?:-(.+))?"/),bt=xt?xt[1]:null,vt=xt?xt[2]:null;Ne==="1"&&lt&&bt&&(re.splice(le,0,{group:bt,isHeader:!0,title:lt,isFixed:!0}),le++,ae=!0),Ne==="2"&&lt&&bt&&vt&&(re.splice(le,0,{group:bt,name:vt,isHeader:!1,title:lt,isFixed:!1,version:"1.0"}),le++)}),ae}let hn;if(he.header&&(hn=pn(Rt,he.header.content,0),hn||Rt.unshift({group:"_header",isHeader:!0,title:he.header.title==null?Et("General"):he.header.title,isFixed:!0})),he.footer){const re=Rt.length;hn=pn(Rt,he.footer.content,Rt.length),!hn&&he.footer.title!=null&&Rt.splice(re,0,{group:"_footer",isHeader:!0,title:he.footer.title,isFixed:!0})}const Rn=he.title?he.title:"apiDoc: "+he.name+" - "+he.version;g()(document).attr("title",Rn),g()("#loader").remove();const Mn={nav:Rt};g()("#sidenav").append(We(Mn)),g()("#generator").append(de(he)),(0,i.extend)(he,{versions:Ot}),g()("#project").append(ve(he)),he.header&&g()("#header").append(be(he.header)),he.footer&&(g()("#footer").append(Re(he.footer)),he.template.aloneDisplay&&document.getElementById("api-_footer").classList.add("hide"));const kt={};let Bn="";gt.forEach(function(re){const ne=[];let le="",ae={},De=re,ke="";kt[re]={},Le.forEach(function(Ne){re===Ne.group&&(le!==Ne.name?(Le.forEach(function(lt){re===lt.group&&Ne.name===lt.name&&(Object.prototype.hasOwnProperty.call(kt[Ne.group],Ne.name)||(kt[Ne.group][Ne.name]=[]),kt[Ne.group][Ne.name].push(lt.version))}),ae={article:Ne,versions:kt[Ne.group][Ne.name]}):ae={article:Ne,hidden:!0,versions:kt[Ne.group][Ne.name]},he.sampleUrl&&he.sampleUrl===!0&&(he.sampleUrl=window.location.origin),he.url&&ae.article.url.substr(0,4).toLowerCase()!=="http"&&(ae.article.url=he.url+ae.article.url),se(ae,Ne),Ne.groupTitle&&(De=Ne.groupTitle),Ne.groupDescription&&(ke=Ne.groupDescription),ne.push({article:q(ae),group:Ne.group,name:Ne.name,aloneDisplay:he.template.aloneDisplay}),le=Ne.name)}),ae={group:re,title:De,description:ke,articles:ne,aloneDisplay:he.template.aloneDisplay},Bn+=Me(ae)}),g()("#sections").append(Bn),he.template.aloneDisplay||(document.body.dataset.spy="scroll",g()("body").scrollspy({target:"#scrollingNav"})),g()(".form-control").on("focus change",function(){g()(this).removeClass("border-danger")}),g()(".sidenav").find("a").on("click",function(re){re.preventDefault();const ne=this.getAttribute("href");if(he.template.aloneDisplay){const le=document.querySelector(".sidenav > li.active");le&&le.classList.remove("active"),this.parentNode.classList.add("active")}else{const le=document.querySelector(ne);le&&g()("html,body").animate({scrollTop:le.offsetTop},400)}window.location.hash=ne});function St(re){let ne=!1;return g().each(re,le=>{ne=ne||(0,i.some)(re[le],ae=>ae.type)}),ne}function kn(){g()('button[data-toggle="popover"]').popover().click(function(ne){ne.preventDefault()});const re=g()("#version strong").html();if(g()("#sidenav li").removeClass("is-new"),he.template.withCompare&&g()("#sidenav li[data-version='"+re+"']").each(function(){const ne=g()(this).data("group"),le=g()(this).data("name"),ae=g()("#sidenav li[data-group='"+ne+"'][data-name='"+le+"']").length,De=g()("#sidenav li[data-group='"+ne+"'][data-name='"+le+"']").index(g()(this));(ae===1||De===ae-1)&&g()(this).addClass("is-new")}),g()(".nav-tabs-examples a").click(function(ne){ne.preventDefault(),g()(this).tab("show")}),g()(".nav-tabs-examples").find("a:first").tab("show"),g()(".sample-request-content-type-switch").change(function(){g()(this).val()==="body-form-data"?(g()("#sample-request-body-json-input-"+g()(this).data("id")).hide(),g()("#sample-request-body-form-input-"+g()(this).data("id")).show()):(g()("#sample-request-body-form-input-"+g()(this).data("id")).hide(),g()("#sample-request-body-json-input-"+g()(this).data("id")).show())}),he.template.aloneDisplay&&(g()(".show-group").click(function(){const ne="."+g()(this).attr("data-group")+"-group",le="."+g()(this).attr("data-group")+"-article";g()(".show-api-group").addClass("hide"),g()(ne).removeClass("hide"),g()(".show-api-article").addClass("hide"),g()(le).removeClass("hide")}),g()(".show-api").click(function(){const ne=this.getAttribute("href").substring(1),le=document.getElementById("version").textContent.trim(),ae=`.${this.dataset.name}-article`,De=`[id="${ne}-${le}"]`,ke=`.${this.dataset.group}-group`;g()(".show-api-group").addClass("hide"),g()(ke).removeClass("hide"),g()(".show-api-article").addClass("hide");let Ne=g()(ae);g()(De).length&&(Ne=g()(De).parent()),Ne.removeClass("hide"),ne.match(/_(header|footer)/)&&document.getElementById(ne).classList.remove("hide")})),he.template.aloneDisplay||g()("body").scrollspy("refresh"),he.template.aloneDisplay){const ne=decodeURI(window.location.hash);if(ne!=null&&ne.length!==0){const le=document.getElementById("version").textContent.trim(),ae=document.querySelector(`li .${ne.slice(1)}-init`),De=document.querySelector(`li[data-version="${le}"] .show-api.${ne.slice(1)}-init`);let ke=ae;De&&(ke=De),ke.click()}}}function $(re){typeof re=="undefined"?re=g()("#version strong").html():g()("#version strong").html(re),g()("article").addClass("hide"),g()("#sidenav li:not(.nav-fixed)").addClass("hide");const ne={};document.querySelectorAll("article[data-version]").forEach(le=>{const ae=le.dataset.group,De=le.dataset.name,ke=le.dataset.version,Ne=ae+De;!ne[Ne]&&r().lte(ke,re)&&(ne[Ne]=!0,document.querySelector(`article[data-group="${ae}"][data-name="${De}"][data-version="${ke}"]`).classList.remove("hide"),document.querySelector(`#sidenav li[data-group="${ae}"][data-name="${De}"][data-version="${ke}"]`).classList.remove("hide"),document.querySelector(`#sidenav li.nav-header[data-group="${ae}"]`).classList.remove("hide"))}),g()("article[data-version]").each(function(le){const ae=g()(this).data("group");g()("section#api-"+ae).removeClass("hide"),g()("section#api-"+ae+" article:visible").length===0?g()("section#api-"+ae).addClass("hide"):g()("section#api-"+ae).removeClass("hide")})}if($(),g()("#versions li.version a").on("click",function(re){re.preventDefault(),$(g()(this).html())}),g()("#compareAllWithPredecessor").on("click",ee),g()("article .versions li.version a").on("click",Q),g().urlParam=function(re){const ne=new RegExp("[\\?&amp;]"+re+"=([^&amp;#]*)").exec(window.location.href);return ne&&ne[1]?ne[1]:null},g().urlParam("compare")&&g()("#compareAllWithPredecessor").trigger("click"),window.location.hash){const re=decodeURI(window.location.hash);g()(re).length>0&&g()("html,body").animate({scrollTop:parseInt(g()(re).offset().top)},0)}document.querySelector('[data-toggle="offcanvas"]').addEventListener("click",function(){const re=document.querySelector(".row-offcanvas");re&&re.classList.toggle("active")}),g()("#scrollingNav .sidenav-search input.search").focus(),g()('[data-action="filter-search"]').on("keyup",V(re=>{const ne=re.currentTarget.value.toLowerCase();g()(".sidenav a.nav-list-item").filter((le,ae)=>g()(ae).toggle(g()(ae).text().toLowerCase().indexOf(ne)>-1))},200)),g()("span.search-reset").on("click",function(){g()("#scrollingNav .sidenav-search input.search").val("").focus(),g()(".sidenav").find("a.nav-list-item").show()});function V(re,ne){let le=null;return(...ae)=>{clearTimeout(le),le=setTimeout(re.bind(this,...ae),ne||0)}}function Q(re){re.preventDefault();const ne=g()(this).parents("article"),le=g()(this).html(),ae=ne.find(".version"),De=ae.find("strong").html();ae.find("strong").html(le);const ke=ne.data("group"),Ne=ne.data("name"),lt=ne.data("version"),xt=ne.data("compare-version");if(xt!==le&&!(!xt&&lt===le)){if(xt&&kt[ke][Ne][0]===le||lt===le)Te(ke,Ne,lt);else{let bt={},vt={};g().each(et[ke][Ne],function(ar,Vn){Vn.version===lt&&(bt=Vn),Vn.version===le&&(vt=Vn)});const st={article:bt,compare:vt,versions:kt[ke][Ne]};st.article.id=st.article.group+"-"+st.article.name+"-"+st.article.version,st.article.id=st.article.id.replace(/\./g,"_"),st.compare.id=st.compare.group+"-"+st.compare.name+"-"+st.compare.version,st.compare.id=st.compare.id.replace(/\./g,"_");let nt=bt;nt.header&&nt.header.fields&&(st._hasTypeInHeaderFields=St(nt.header.fields)),nt.parameter&&nt.parameter.fields&&(st._hasTypeInParameterFields=St(nt.parameter.fields)),nt.error&&nt.error.fields&&(st._hasTypeInErrorFields=St(nt.error.fields)),nt.success&&nt.success.fields&&(st._hasTypeInSuccessFields=St(nt.success.fields)),nt.info&&nt.info.fields&&(st._hasTypeInInfoFields=St(nt.info.fields)),nt=vt,st._hasTypeInHeaderFields!==!0&&nt.header&&nt.header.fields&&(st._hasTypeInHeaderFields=St(nt.header.fields)),st._hasTypeInParameterFields!==!0&&nt.parameter&&nt.parameter.fields&&(st._hasTypeInParameterFields=St(nt.parameter.fields)),st._hasTypeInErrorFields!==!0&&nt.error&&nt.error.fields&&(st._hasTypeInErrorFields=St(nt.error.fields)),st._hasTypeInSuccessFields!==!0&&nt.success&&nt.success.fields&&(st._hasTypeInSuccessFields=St(nt.success.fields)),st._hasTypeInInfoFields!==!0&&nt.info&&nt.info.fields&&(st._hasTypeInInfoFields=St(nt.info.fields));const pi=me(st);ne.after(pi),ne.next().find(".versions li.version a").on("click",Q),g()("#sidenav li[data-group='"+ke+"'][data-name='"+Ne+"'][data-version='"+De+"']").addClass("has-modifications"),ne.remove()}kn(),v().highlightAll()}}function ee(re){re.preventDefault(),g()("article:visible .versions").each(function(){const le=g()(this).parents("article").data("version");let ae=null;g()(this).find("li.version a").each(function(){g()(this).html()<le&&!ae&&(ae=g()(this))}),ae&&ae.trigger("click")})}function se(re,ne){re.id=re.article.group+"-"+re.article.name+"-"+re.article.version,re.id=re.id.replace(/\./g,"_"),ne.header&&ne.header.fields&&(re._hasTypeInHeaderFields=St(ne.header.fields)),ne.parameter&&ne.parameter.fields&&(re._hasTypeInParameterFields=St(ne.parameter.fields)),ne.error&&ne.error.fields&&(re._hasTypeInErrorFields=St(ne.error.fields)),ne.success&&ne.success.fields&&(re._hasTypeInSuccessFields=St(ne.success.fields)),ne.info&&ne.info.fields&&(re._hasTypeInInfoFields=St(ne.info.fields)),re.template=he.template}function ye(re,ne,le){let ae={};g().each(et[re][ne],function(ke,Ne){Ne.version===le&&(ae=Ne)});const De={article:ae,versions:kt[re][ne]};return se(De,ae),q(De)}function Te(re,ne,le){const ae=g()("article[data-group='"+re+"'][data-name='"+ne+"']:visible"),De=ye(re,ne,le);ae.after(De),ae.next().find(".versions li.version a").on("click",Q),g()("#sidenav li[data-group='"+re+"'][data-name='"+ne+"'][data-version='"+le+"']").removeClass("has-modifications"),ae.remove()}function Ie(re,ne,le){const ae=[];return ne.forEach(function(De){le?re.forEach(function(ke){const Ne=ke.split(le);(Ne[0]===De||Ne[1]===De)&&ae.push(ke)}):re.forEach(function(ke){ke===De&&ae.push(De)})}),re.forEach(function(De){ae.indexOf(De)===-1&&ae.push(De)}),ae}function Ce(re,ne){const le=[];return ne.forEach(ae=>{Object.keys(re).forEach(De=>{re[De].replace(/_/g," ")===ae&&le.push(De)})}),Object.keys(re).forEach(ae=>{le.indexOf(ae)===-1&&le.push(ae)}),le}kn()}})()})();

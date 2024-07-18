@@ -65,13 +65,15 @@ export const getProfile = () => {
  * @apiBody (Request Body) {Object} userDto 사용자 정보
  * @apiParamExample {json} Request-Example:
  *     {
- *       "email": "user@example.com",
- *       "name": "User Name",
- *       "phone": "010-1234-5678",
- *       "profileImage": "https://example.com/profile.jpg",
- *       "introduce": "Hello, I'm a user",
- *       "birth": "1990-01-01",
- *       "gender": "M"
+ *       "userDto": {
+ *         "email": "user@example.com",
+ *         "name": "User Name",
+ *         "phone": "010-1234-5678",
+ *         "profileImage": "https://example.com/profile.jpg",
+ *         "introduce": "Hello, I'm a user",
+ *         "birth": "1990-01-01",
+ *         "gender": "M"
+ *       }
  *     }
  * @apiSuccess {String} message 성공 메시지
  * @apiSuccessExample {json} Success-Response:

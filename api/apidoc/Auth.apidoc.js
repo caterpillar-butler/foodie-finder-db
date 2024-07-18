@@ -51,13 +51,15 @@ export const login = (email, password) => {
  *     }
  * @apiParamExample {json} Request-Example:
  *     {
- *       "email": "newuser@example.com",
- *       "name": "New User",
- *       "password": "newUserPassword",
- *       "phone": "010-1234-5678",
- *       "profileImage": "https://example.com/profile.jpg",
- *       "birth": "1990-01-01",
- *       "gender": "M"
+ *       "userDto": {
+ *         "email": "newuser@example.com",
+ *         "name": "New User",
+ *         "password": "newUserPassword",
+ *         "phone": "010-1234-5678",
+ *         "profileImage": "https://example.com/profile.jpg",
+ *         "birth": "1990-01-01",
+ *         "gender": "M"
+ *       }
  *     }
  */
 export const register = (userDto) => {

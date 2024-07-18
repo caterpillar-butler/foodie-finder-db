@@ -302,9 +302,9 @@
  * @apiVersion 1.0.0
  * @apiDescription 특정 답변 수정 처리 (문의글 관리 서비스)
  * @apiHeader {String} Authorization Bearer JWT
- * @apiBody {String} inquiryId 문의글 ID
- * @apiBody {String} replyId 답변 ID
- * @apiBody {String} replyContent 수정된 답변 내용
+ * @apiBody (Request Body) {String} inquiryId 문의글 ID
+ * @apiBody (Request Body) {String} replyId 답변 ID
+ * @apiBody (Request Body) {String} replyContent 수정된 답변 내용
  * @apiParamExample {json} Request-Example:
  *     {
  *       "inquiryId": "inquiry1",

@@ -7,19 +7,21 @@
  * @apiSuccess {Object[]} boardDtos 게시글 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     [
- *       {
- *         "id": "board1",
- *         "title": "Board Title",
- *         "content": "Board Content"
- *       },
- *       {
- *         "id": "board2",
- *         "title": "Board Title",
- *         "content": "Board Content"
- *       },
- *       ...
- *     ]
+ *     {
+ *       "boardDtos": [
+ *         {
+ *           "id": "board1",
+ *           "title": "Board Title",
+ *           "content": "Board Content"
+ *         },
+ *         {
+ *           "id": "board2",
+ *           "title": "Board Title",
+ *           "content": "Board Content"
+ *         },
+ *         ...
+ *       ]
+ *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 500 Internal Server Error
@@ -42,19 +44,21 @@
  *     }
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     [
- *       {
- *         "id": "board1",
- *         "title": "Search Title",
- *         "content": "Board Content"
- *       },
- *       {
- *         "id": "board2",
- *         "title": "Search Title",
- *         "content": "Board Content"
- *       },
- *       ...
- *     ]
+ *     {
+ *       "boardDtos": [
+ *         {
+ *           "id": "board1",
+ *           "title": "Search Title",
+ *           "content": "Board Content"
+ *         },
+ *         {
+ *           "id": "board2",
+ *           "title": "Search Title",
+ *           "content": "Board Content"
+ *         },
+ *         ...
+ *       ]
+ *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 500 Internal Server Error
@@ -77,21 +81,23 @@
  *     }
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     [
- *       {
- *         "id": "board1",
- *         "title": "Board Title",
- *         "content": "Board Content",
- *         "tags": ["Search Tag"]
- *       },
- *       {
- *         "id": "board2",
- *         "title": "Search Tag",
- *         "content": "Board Content",
- *         "tags": ["Search Tag"]
- *       },
- *       ...
- *     ]
+ *     {
+ *       "boardDtos": [
+ *         {
+ *           "id": "board1",
+ *           "title": "Board Title",
+ *           "content": "Board Content",
+ *           "tags": ["Search Tag"]
+ *         },
+ *         {
+ *           "id": "board2",
+ *           "title": "Search Tag",
+ *           "content": "Board Content",
+ *           "tags": ["Search Tag"]
+ *         },
+ *         ...
+ *       ]
+ *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 500 Internal Server Error
@@ -114,21 +120,23 @@
  *     }
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     [
- *       {
- *         "id": "board1",
- *         "title": "Board Title",
- *         "content": "Board Content",
- *         "userId": "user1"
- *       },
- *       {
- *         "id": "board2",
- *         "title": "Search Tag",
- *         "content": "Board Content",
- *         "userId": "user1"
- *       },
- *       ...
- *     ]
+ *     {
+ *       "boardDtos": [
+ *         {
+ *           "id": "board1",
+ *           "title": "Board Title",
+ *           "content": "Board Content",
+ *           "userId": "user1"
+ *         },
+ *         {
+ *           "id": "board2",
+ *           "title": "Search Tag",
+ *           "content": "Board Content",
+ *           "userId": "user1"
+ *         },
+ *         ...
+ *       ]
+ *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 500 Internal Server Error
@@ -151,19 +159,21 @@
  *     }
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     [
- *       {
- *         "id": "board1",
- *         "title": "Board Title",
- *         "content": "Search Content"
- *       },
- *       {
- *         "id": "board2",
- *         "title": "Search Content",
- *         "content": "Board Content"
- *       },
- *       ...
- *     ]
+ *     {
+ *       "boardDtos": [
+ *         {
+ *           "id": "board1",
+ *           "title": "Board Title",
+ *           "content": "Search Content"
+ *         },
+ *         {
+ *           "id": "board2",
+ *           "title": "Search Content",
+ *           "content": "Board Content"
+ *         },
+ *         ...
+ *       ]
+ *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 500 Internal Server Error

@@ -1,4 +1,3 @@
-
 /**
  * @api {post} /api/user/board 게시글 생성
  * @apiName CreateBoard
@@ -10,11 +9,13 @@
  * @apiBody (Request Body) {Object} boardDto 게시글 정보
  * @apiParamExample {json} Request-Example:
  *     {
- *       "title": "Post Title",
- *       "content": "Post Content",
- *       "likes": 0,
- *       "image": "https://example.com/image.jpg",
- *       "hashTags": ["tag1", "tag2"]
+ *       "boardDto": {
+ *         "title": "Post Title",
+ *         "content": "Post Content",
+ *         "likes": 0,
+ *         "image": "https://example.com/image.jpg",
+ *         "hashTags": ["tag1", "tag2"]
+ *       }
  *     }
  * @apiSuccess {String} message 성공 메시지
  * @apiSuccessExample {json} Success-Response:
@@ -37,18 +38,20 @@ export const createPost = (boardDto) => {
  * @api {put} /api/user/board 게시글 수정
  * @apiName UpdateBoard
  * @apiGroup Board
-* @apiVersion 1.0.0
+ * @apiVersion 1.0.0
  * @apiDescription 게시글 수정 (게시글 서비스)
  * @apiHeader {String} Authorization Bearer JWT
  * @apiHeader {String} Content-Type application/json
  * @apiBody (Request Body) {Object} boardDto 게시글 정보
  * @apiParamExample {json} Request-Example:
  *     {
- *       "title": "Post Title",
- *       "content": "Post Content",
- *       "likes": 0,
- *       "image": "https://example.com/image.jpg",
- *       "hashTags": ["tag1", "tag2"]
+ *       "boardDto": {
+ *         "title": "Post Title",
+ *         "content": "Post Content",
+ *         "likes": 0,
+ *         "image": "https://example.com/image.jpg",
+ *         "hashTags": ["tag1", "tag2"]
+ *       }
  *     }
  * @apiSuccess {String} message 성공 메시지
  * @apiSuccessExample {json} Success-Response:
