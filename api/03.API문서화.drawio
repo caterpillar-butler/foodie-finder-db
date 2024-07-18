@@ -1,0 +1,502 @@
+<mxfile host="Electron" modified="2024-07-18T20:31:30.228Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="8MPSc1pCpdwoegqy_NfV" version="24.6.4" type="device">
+  <diagram name="페이지-1" id="4gEHgnbrqNebaChG7rm6">
+    <mxGraphModel dx="1493" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-56" value="[도메인]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-57" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="50" y="110" width="1150" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-58" value="회원" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="50" y="70" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-59" value="요청종류" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="120" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-60" value="관련서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="120" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-61" value="요청URI" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="276" y="120" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-62" value="Description" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="841" y="120" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-63" value="요청파라미터" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="425" y="120" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-64" value="응답형태" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="636" y="120" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-65" value="인증서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="180" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-66" value="회원가입 페이지" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="65" y="183" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-67" value="/api/auth/register" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="256" y="180" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-68" value="JSON{UserDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="421" y="180" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-69" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="180" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-70" value="&lt;div style=&quot;&quot;&gt;회원 가입&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="846" y="180" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-71" value="/api/auth/logout" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="256" y="210" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-72" value="JWT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="451" y="210" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-73" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="210" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-74" value="로그아웃" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="846" y="213" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-75" value="인증서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="210" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-76" value="로그아웃" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="213" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-77" value="&lt;div style=&quot;text-align: start;&quot;&gt;/api/user/deleteAccount&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="236" y="240" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-78" value="JWT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="456" y="240" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-79" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="240" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-80" value="회원탈퇴" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="846" y="243" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-81" value="회원정보 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="240" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-82" value="회원탈퇴" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="243" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-83" value="/api/user/myProfile" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="251" y="270" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-84" value="내 프로필 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="836" y="270" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-85" value="회원정보 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="265" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-86" value="프로필조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="75" y="273" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-87" value="내 프로필 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="836" y="300" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-88" value="/api/user/myProfile" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="251" y="300" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-89" value="회원정보 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="295" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-90" value="프로필수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="75" y="303" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-91" value="랜덤 비밀번호 생성 후 메일로 보냄" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="786" y="432" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-92" value="/api/find/password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="251" y="435" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-93" value="JSON{&quot;email&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="431" y="432" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-94" value="회원정보 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="430" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-95" value="비밀번호 찾기" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="70" y="435" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-96" value="JSON{UserDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="616" y="300" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-97" value="게시글 생성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="841" y="462" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-98" value="/api/user/board" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="261" y="465" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-99" value="JWT, JSON{BoardDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="411" y="465" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-100" value="게시글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1045" y="457" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-101" value="게시글 작성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="75" y="465" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-102" value="JWT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="456" y="270" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-103" value="JWT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="456" y="300" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-104" value="게시글 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="841" y="492" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-105" value="/api/user/board" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="261" y="495" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-106" value="JWT, JSON{BoardDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="411" y="495" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-107" value="게시글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1045" y="492" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-108" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="492" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-109" value="게시글 목록 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="522" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-110" value="/api/noneUser/board" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="245" y="525" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-111" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="456" y="525" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-112" value="게시글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1045" y="525" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-113" value="게시글 목록 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="65" y="525" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-114" value="JSON{BoardDtos}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="611" y="522" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-115" value="게시글 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="75" y="495" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-116" value="상세 게시글 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="552" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-117" value="/api/noneUser/board/:id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="241" y="555" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-118" value="JSON{&quot;boardId&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="426" y="555" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-119" value="게시글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1045" y="555" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-120" value="상세 게시글 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="65" y="555" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-121" value="JSON{BoardDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="616" y="552" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-124" value="문의 게시물 생성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="671" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-125" value="/api/user/inquiry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="251" y="674" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-126" value="문의 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="671" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-127" value="문의 생성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="674" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-128" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="671" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-129" value="문의 게시물 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="701" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-130" value="/api/user/inquiry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="251" y="701" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-131" value="문의 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="701" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-132" value="문의 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="705" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-133" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="701" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-143" value="JWT, JSON{InquiryDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="411" y="674" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-144" value="JWT, JSON{InquiryDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="411" y="704" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-222" value="&lt;span style=&quot;background-color: initial;&quot;&gt;None&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="432" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-223" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="462" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-242" value="JSON{UserDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="616" y="270" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-243" value="로그인페이지" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="65" y="153" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-244" value="/api/auth/login" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="261" y="150" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-245" value="JSON { &quot;email&quot;, &quot;password&quot; }" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="386" y="153" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-246" value="JWT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="150" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-247" value="회원 로그인" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="840" y="150" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mRWL0Bqbvcu_I-rRUW5r-248" value="인증서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="150" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-1" value="HTTP METHOD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="155" y="123" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-2" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="153" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-3" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-4" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="213" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-5" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="243" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-6" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="273" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-7" value="PUT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="303" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-8" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="435" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-9" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="465" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-10" value="PUT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="495" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-11" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="525" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-12" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="555" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-13" value="게시글 댓글 작성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="583" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-14" value="/api/user/board/:id/comment" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="231" y="583" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-15" value="JWT, JSON{CommentDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="401" y="583" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-16" value="댓글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="583" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-17" value="댓글 작성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="583" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-18" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="583" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-19" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="583" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-20" value="게시글 댓글 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="610" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-21" value="/api/user/board/:id/comment" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="231" y="613" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-22" value="JWT, JSON{CommentDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="401" y="613" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-23" value="댓글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="613" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-24" value="댓글 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="613" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-25" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="610" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-26" value="PUT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="610" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-27" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="675" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dZYlwQeeD8JfPDn3CNtt-28" value="PUT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="704" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-1" value="나를 팔로잉하고 있는 사람들의 목록" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="786" y="329" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-2" value="/api/user/follower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="256" y="329" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-3" value="커뮤니티 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="324" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-4" value="팔로워 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="75" y="332" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-5" value="JSON{UserDtos}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="616" y="329" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-6" value="JWT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="456" y="329" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-7" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="332" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-8" value="나를 팔로잉하고 있는 사람들의 목록" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="786" y="359" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-9" value="/api/user/follower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="256" y="359" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-10" value="커뮤니티 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="354" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-11" value="팔로잉 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="75" y="362" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-12" value="JSON{UserDtos}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="616" y="359" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-13" value="JWT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="456" y="359" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-14" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="362" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-15" value="문의 목록 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="836" y="727" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-16" value="/api/user/inquiry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="251" y="727" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-17" value="문의 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="727" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-18" value="문의 목록 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="70" y="731" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-19" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="727" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-20" value="JWT, JSON{InquiryDtos}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="411" y="730" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-21" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="730" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-22" value="문의 게시물 생성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="640" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-23" value="/api/user/inquiry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="251" y="643" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-24" value="댓글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="640" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-25" value="댓글 목록 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="70" y="643" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-26" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="640" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-27" value="JWT, JSON{InquiryDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="411" y="643" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-28" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="644" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-29" value="게시글 댓글 작성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="757" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-30" value="/api/user/inquiry/reply" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="246" y="757" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-31" value="JWT, JSON{&quot;inquiryId&quot;, ReplyDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="381" y="757" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-32" value="댓글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="757" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-33" value="답변 작성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="757" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-34" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="757" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-35" value="POST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="757" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-36" value="게시글 댓글 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="784" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-37" value="/api/user/inquiry/reply" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="246" y="787" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-38" value="JWT, JSON{&quot;inquiryId,&quot; ReplyDto}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="381" y="787" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-39" value="댓글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="787" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-40" value="답변 수정" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="80" y="787" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-41" value="None" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="646" y="784" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-42" value="PUT" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="784" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-43" value="문의 게시물 생성" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="831" y="814" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-44" value="/api/user/inquiry/reply" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="236" y="817" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-45" value="댓글 서비스" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="814" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-46" value="답변 목록 조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="70" y="817" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-47" value="JSON{ReplyDtos}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="611" y="814" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-48" value="JWT, JSON{&quot;inquiryId&quot;}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="411" y="817" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QurQdiZezFDKq5seHehC-49" value="GET" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="190" y="818" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
