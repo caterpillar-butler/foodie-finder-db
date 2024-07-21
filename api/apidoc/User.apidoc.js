@@ -19,7 +19,7 @@
  *     }
  */
 export const deleteAccount = () => {
-  // ... API call implementation
+   // ... API call implementation
 };
 
 /**
@@ -33,15 +33,13 @@ export const deleteAccount = () => {
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {
- *       "userDto": {
- *         "email": "user@example.com",
- *         "name": "User Name",
- *         "phone": "010-1234-5678",
- *         "profileImage": "https://example.com/profile.jpg",
- *         "introduce": "Hello, I'm a user",
- *         "birth": "1990-01-01",
- *         "gender": "M"
- *       }
+ *       "email": "user@example.com",
+ *       "name": "User Name",
+ *       "phone": "010-1234-5678",
+ *       "profileImage": "https://example.com/profile.jpg",
+ *       "introduce": "Hello, I'm a user",
+ *       "birth": "1990-01-01",
+ *       "gender": "M"
  *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
@@ -51,7 +49,7 @@ export const deleteAccount = () => {
  *     }
  */
 export const getProfile = () => {
-  // ... API call implementation
+   // ... API call implementation
 };
 
 /**
@@ -65,15 +63,13 @@ export const getProfile = () => {
  * @apiBody (Request Body) {Object} userDto 사용자 정보
  * @apiParamExample {json} Request-Example:
  *     {
- *       "userDto": {
- *         "email": "user@example.com",
- *         "name": "User Name",
- *         "phone": "010-1234-5678",
- *         "profileImage": "https://example.com/profile.jpg",
- *         "introduce": "Hello, I'm a user",
- *         "birth": "1990-01-01",
- *         "gender": "M"
- *       }
+ *       "email": "user@example.com",
+ *       "name": "User Name",
+ *       "phone": "010-1234-5678",
+ *       "profileImage": "https://example.com/profile.jpg",
+ *       "introduce": "Hello, I'm a user",
+ *       "birth": "1990-01-01",
+ *       "gender": "M"
  *     }
  * @apiSuccess {String} message 성공 메시지
  * @apiSuccessExample {json} Success-Response:
@@ -88,6 +84,6 @@ export const getProfile = () => {
  *       "error": "Invalid token"
  *     }
  */
-export const updateProfile = (userDto) => {
-  // ... API call implementation
+export const updateProfile = userDto => {
+   // ... API call implementation
 };

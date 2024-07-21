@@ -8,8 +8,7 @@
  * @apiSuccess {Object[]} userDtos 사용자 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "userDtos": [
+ *     [
  *         {
  *           "id": "user1",
  *           "email": "user1@example.com",
@@ -22,7 +21,6 @@
  *         },
  *         ...
  *       ]
- *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized
@@ -42,11 +40,9 @@
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {
- *       "userDto": {
- *         "id": "user1",
- *         "email": "user1@example.com",
- *         "name": "User One"
- *       }
+ *       "id": "user1",
+ *       "email": "user1@example.com",
+ *       "name": "User One"
  *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
@@ -92,8 +88,7 @@
  * @apiSuccess {Object[]} boardDtos 게시글 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "boardDtos": [
+ *     [
  *         {
  *           "id": "board1",
  *           "title": "Board Title",
@@ -105,8 +100,7 @@
  *           "content": "Board Content"
  *         },
  *         ...
- *       ]
- *     }
+ *    ]
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized
@@ -147,8 +141,7 @@
  * @apiSuccess {Object[]} inquiryDtos 문의글 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "inquiryDtos": [
+ *     [
  *         {
  *           "id": "inquiry1",
  *           "title": "Inquiry Title",
@@ -160,8 +153,7 @@
  *           "content": "Inquiry Content"
  *         },
  *         ...
- *       ]
- *     }
+ *     ]
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized
@@ -186,11 +178,9 @@
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {
- *       "inquiryDto": {
- *         "id": "inquiry1",
- *         "title": "Inquiry Title",
- *         "content": "Inquiry Content"
- *       }
+ *       "id": "inquiry1",
+ *       "title": "Inquiry Title",
+ *       "content": "Inquiry Content"
  *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
@@ -238,8 +228,7 @@
  * @apiSuccess {Object[]} replyDtos 답변 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "replyDtos": [
+ *     [
  *         {
  *           "id": "reply1",
  *           "content": "Reply Content"
@@ -249,8 +238,7 @@
  *           "content": "Reply Content"
  *         },
  *         ...
- *       ]
- *     }
+ *     ]
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized
@@ -274,8 +262,7 @@
  * @apiSuccess {Object[]} replyDtos 답변 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "replyDtos": [
+ *     [
  *         {
  *           "id": "reply1",
  *           "content": "Reply Content"
@@ -285,8 +272,7 @@
  *           "content": "Reply Content"
  *         },
  *         ...
- *       ]
- *     }
+ *     ]
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized

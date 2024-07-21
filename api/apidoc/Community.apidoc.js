@@ -1,4 +1,3 @@
-
 /**
  * @api {get} /api/user/follower 나를 팔로잉하고 있는 사람들의 목록
  * @apiName GetFollowers
@@ -9,8 +8,7 @@
  * @apiSuccess {Array} userDtos 사용자 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "userDtos": [
+ *     [
  *         {
  *           "email": "user@example.com",
  *           "name": "User Name",
@@ -25,7 +23,6 @@
  *         },
  *         ...
  *       ]
- *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized
@@ -34,7 +31,7 @@
  *     }
  */
 export const getFollowers = () => {
-  // ... API call implementation
+   // ... API call implementation
 };
 
 /**
@@ -47,8 +44,7 @@ export const getFollowers = () => {
  * @apiSuccess {Array} userDtos 사용자 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "userDtos": [
+ *     [
  *         {
  *           "email": "user@example.com",
  *           "name": "User Name",
@@ -63,7 +59,6 @@ export const getFollowers = () => {
  *         },
  *         ...
  *       ]
- *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized
@@ -72,5 +67,5 @@ export const getFollowers = () => {
  *     }
  */
 export const getFollowing = () => {
-  // ... API call implementation
+   // ... API call implementation
 };

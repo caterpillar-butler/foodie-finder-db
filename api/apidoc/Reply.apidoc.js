@@ -26,7 +26,7 @@
  *     }
  */
 export const createReply = (inquiryId, replyDto) => {
-  // ... API call implementation
+   // ... API call implementation
 };
 
 /**
@@ -57,7 +57,7 @@ export const createReply = (inquiryId, replyDto) => {
  *     }
  */
 export const updateReply = (inquiryId, replyDto) => {
-  // ... API call implementation
+   // ... API call implementation
 };
 
 /**
@@ -76,15 +76,13 @@ export const updateReply = (inquiryId, replyDto) => {
  * @apiSuccess {Array} replyDtos 답변 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "replyDtos": [
- *         {
- *           "id": "1",
- *           "content": "Reply Content"
- *         },
- *         ...
- *       ]
- *     }
+ *     [
+ *       {
+ *          "id": "1",
+ *          "content": "Reply Content"
+ *       },
+ *       ...
+ *     ]
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized
@@ -92,6 +90,6 @@ export const updateReply = (inquiryId, replyDto) => {
  *       "error": "Invalid token"
  *     }
  */
-export const getReplies = (inquiryId) => {
-  // ... API call implementation
+export const getReplies = inquiryId => {
+   // ... API call implementation
 };

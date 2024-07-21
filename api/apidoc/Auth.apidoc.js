@@ -26,7 +26,7 @@
  *     }
  */
 export const login = (email, password) => {
-  // ... API call implementation
+   // ... API call implementation
 };
 
 /**
@@ -51,19 +51,17 @@ export const login = (email, password) => {
  *     }
  * @apiParamExample {json} Request-Example:
  *     {
- *       "userDto": {
- *         "email": "newuser@example.com",
- *         "name": "New User",
- *         "password": "newUserPassword",
- *         "phone": "010-1234-5678",
- *         "profileImage": "https://example.com/profile.jpg",
- *         "birth": "1990-01-01",
- *         "gender": "M"
- *       }
+ *       "email": "newuser@example.com",
+ *       "name": "New User",
+ *       "password": "newUserPassword",
+ *       "phone": "010-1234-5678",
+ *       "profileImage": "https://example.com/profile.jpg",
+ *       "birth": "1990-01-01",
+ *       "gender": true
  *     }
  */
-export const register = (userDto) => {
-  // ... API call implementation
+export const register = userDto => {
+   // ... API call implementation
 };
 
 /**
@@ -86,6 +84,6 @@ export const register = (userDto) => {
  *       "error": "Invalid token"
  *     }
  */
-export const logout = (token) => {
-  // ... API call implementation
+export const logout = token => {
+   // ... API call implementation
 };

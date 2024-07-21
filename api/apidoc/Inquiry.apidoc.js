@@ -72,8 +72,7 @@ export const updateInquiry = (inquiryDto) => {
  * @apiSuccess {Array} inquiryDtos 문의 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "inquiryDtos": [
+ *     [
  *         {
  *           "id": "1",
  *           "title": "Inquiry Title",
@@ -85,8 +84,7 @@ export const updateInquiry = (inquiryDto) => {
  *           "content": "Inquiry Content2"
  *         },
  *         ...
- *       ]
- *     }
+ *     ]
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized

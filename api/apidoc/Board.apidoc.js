@@ -9,13 +9,11 @@
  * @apiBody (Request Body) {Object} boardDto 게시글 정보
  * @apiParamExample {json} Request-Example:
  *     {
- *       "boardDto": {
  *         "title": "Post Title",
  *         "content": "Post Content",
  *         "likes": 0,
  *         "image": "https://example.com/image.jpg",
  *         "hashTags": ["tag1", "tag2"]
- *       }
  *     }
  * @apiSuccess {String} message 성공 메시지
  * @apiSuccessExample {json} Success-Response:
@@ -45,13 +43,11 @@ export const createPost = (boardDto) => {
  * @apiBody (Request Body) {Object} boardDto 게시글 정보
  * @apiParamExample {json} Request-Example:
  *     {
- *       "boardDto": {
  *         "title": "Post Title",
  *         "content": "Post Content",
  *         "likes": 0,
  *         "image": "https://example.com/image.jpg",
  *         "hashTags": ["tag1", "tag2"]
- *       }
  *     }
  * @apiSuccess {String} message 성공 메시지
  * @apiSuccessExample {json} Success-Response:
@@ -79,8 +75,7 @@ export const updatePost = (boardDto) => {
  * @apiSuccess {Array} boardDtos 게시글 정보 목록
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
- *     {
- *       "boardDtos": [
+ *     [
  *         {
  *           "id": "1",
  *           "title": "Post Title",
@@ -96,8 +91,7 @@ export const updatePost = (boardDto) => {
  *           "image": "https://example.com/image2.jpg"
  *         },
  *         ...
- *       ]
- *     }
+ *     ]
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 401 Unauthorized
@@ -120,13 +114,11 @@ export const getPosts = () => {
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
  *     {
- *       "boardDto": {
  *         "id": "1",
  *         "title": "Post Title",
  *         "content": "Post Content",
  *         "likes": 0,
  *         "image": "https://example.com/image.jpg"
- *       }
  *     }
  * @apiError {String} error 에러 메시지
  * @apiErrorExample {json} Error-Response:
